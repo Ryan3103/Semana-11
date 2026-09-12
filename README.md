@@ -8,17 +8,15 @@ Descrição do projeto:
 É uma aplicação web voltada para a exploração e organização de álbuns musicais. A aplicação apresenta álbuns e seus respectivos artistas, permitindo futuramente consultar suas faixas e buscar diferentes conteúdos musicais.
 
 
-2. Wireframe
-
-O wireframe abaixo representa o planejamento inicial da página inicial.
-
-![Wireframe](public/images/wireframe.png)
-
-
-
-3. Home-page
+2. Home-page
 
 Abaixo está o resultado da implementação da Home-page utilizando HTML e CSS.
 
-![Print da Home-page](public/images/homepage.png)
-![Print da Home-page](public/images/homepage2.png)
+Versão Desktop
+![Print da Home-page](public/images/desktop1.png)
+![Print da Home-page](public/images/desktop2.png)
+
+Versão Mobile
+![Print da Home-page](public/images/mobile1.png)
+![Print da Home-page](public/images/mobile2.png)
+![Print da Home-page](public/images/mobile3.png)
