@@ -9,67 +9,80 @@
 </head>
 
 <body>
+
+    <!-- Cabeçalho com Logo -->
     <header class="top">
-        <h1>Ryan</h1>
+        <h1>Ryan Music</h1>
         <nav class="top-bar">
             <a href="#">Início</a>
-            <a href="#albuns">Albuns</a>
+            <a href="#albuns">Álbuns</a>
             <a href="#artistas">Artistas</a>
             <a href="#sobre">Sobre</a>
         </nav>
     </header>
 
     <main>
-        <section>
+        <!-- Seção Principal -->
+        <section class="hero-section">
             <div class="main">
-                <img src="/Semanal4-project/public/images/racionais.png" alt="foto racionais">
-                <a class="explorar" href="#">Explorar</a>
-                
-            </div>
-        </section>
-        <section class="cards" id="albuns">
-
-            <div class="card">
-                <img src="/Semanal4-project/public/images/teto.png" alt="homem e carro">
-                <h3>Manha</h3>
-            </div>
-
-             <div class="card">
-                <img src="/Semanal4-project/public/images/teto.png" alt="homem e carro">
-                <h3>Manha</h3>
-            </div>
-
-            <div class="card">
-                <img src="/Semanal4-project/public/images/teto.png" alt="homem e carro">
-                <h3>Manha</h3>
-            </div>
-
-            <div class="card">
-                <img src="/Semanal4-project/public/images/teto.png" alt="homem e carro">
-                <h3>Manha</h3>
-            </div>
-
-            <div class="card">
-                <img src="/Semanal4-project/public/images/teto.png" alt="homem e carro">
-                <h3>Manha</h3>
+                <img src="/Semanal4-project/public/images/racionais.png" alt="Banner Racionais MCs" class="banner-img">
+                <div class="hero-text">
+                    <h2>Sua plataforma definitiva de música</h2>
+                    <p>Explore os melhores álbuns, conecte-se com seus artistas favoritos e descubra novos lançamentos
+                        do cenário musical em um só lugar.</p>
+                </div>
+                <a class="explorar" href="#albuns">Explorar Álbuns</a>
             </div>
         </section>
 
+        <!-- Seção Secundária com Cards -->
+        <section class="cards-section" id="albuns">
+            <h2>Álbuns em Destaque</h2>
+            <div class="cards-grid">
+
+                <article class="card">
+                    <img src="/Semanal4-project/public/images/teto.png" alt="Capa do Álbum Manhã">
+                    <h3>Álbum Manhã</h3>
+                    <p>Cruzeiro.</p>
+                </article>
+
+                <article class="card">
+                    <img src="/Semanal4-project/public/images/teto.png" alt="Capa do Álbum Noite">
+                    <h3>Álbum Noite</h3>
+                    <p>esporte.</p>
+                </article>
+
+                <article class="card">
+                    <img src="/Semanal4-project/public/images/teto.png" alt="Capa do Álbum Teto">
+                    <h3>Álbum Teto</h3>
+                    <p>clube.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Formulário de Busca -->
         <section class="base">
-            <form action="">
+            <form action="#">
                 <div class="input-group">
-                    <input type="text" name="album" id="album" placeholder="Nome do album">
+                    <input type="text" name="album" id="album" placeholder="Nome do álbum">
                     <input type="text" name="name" id="name" placeholder="Nome do artista">
                 </div>
-                <button class="pesquisar">Pesquisar</button>
+                <button type="submit" class="pesquisar">Pesquisar</button>
             </form>
         </section>
-
     </main>
 
-    <footer class="footer"> 
+    <!-- Rodapé -->
+    <footer class="footer">
         <p>&copy; 2026 ryanzin. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Spotify</a>
+        </div>
     </footer>
 
 </body>
+
 </html>
