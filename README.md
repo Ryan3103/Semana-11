@@ -15,6 +15,7 @@ Abaixo está o resultado da implementação da Home-page utilizando HTML e CSS.
 Versão Desktop
 ![Print da Home-page](public/images/desktop1.png)
 ![Print da Home-page](public/images/desktop2.png)
+![Print da Home-page](public/images/desktop3.png)
 
 Versão Mobile
 ![Print da Home-page](public/images/mobile1.png)
