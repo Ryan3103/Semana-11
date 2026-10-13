@@ -5,27 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pMusic</title>
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <style>
+        .hero {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-img {
+            display: block;
+            width: 100%;
+            height: 460px;
+            object-fit: cover;
+            object-position: center 20%;
+        }
+
+        .hero-texto {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, .92) 0%, rgba(0, 0, 0, .6) 55%, rgba(0, 0, 0, 0) 100%);
+        }
+
+        .hero-texto p {
+            max-width: 38rem;
+        }
+
+        @media (max-width: 576px) {
+            .hero-img {
+                height: 380px;
+            }
+
+            .hero-texto {
+                padding: 1.25rem;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-dark text-light">
 
-    <!-- Cabeçalho -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary px-3">
             <div class="container">
-                <a class="navbar-brand text-warning fw-bold fs-3" href="#">pMusic</a>
-
+                <a class="navbar-brand text-warning fw-bold fs-3" href="index.html">pMusic</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
                     aria-controls="menu" aria-expanded="false" aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse justify-content-end" id="menu">
                     <div class="navbar-nav gap-2">
-                        <a class="nav-link active" href="#">Início</a>
+                        <a class="nav-link active" href="index.html">Início</a>
                         <a class="nav-link" href="#albuns">Álbuns</a>
                         <a class="nav-link" href="#artistas">Artistas</a>
                         <a class="nav-link" href="#sobre">Sobre</a>
@@ -36,113 +69,52 @@
     </header>
 
     <main class="container py-5">
-        <!-- Hero / Destaque -->
-        <section class="text-center mb-5">
-            <img src="/Semanal4-project/public/images/racionais.png" alt="Banner Racionais"
-                class="img-fluid rounded-4 mb-4 shadow" style="max-height: 400px; width: 100%; object-fit: cover;">
-            <h1 class="text-warning fw-bold display-6">Sua plataforma definitiva de música</h1>
-            <p class="text-secondary col-md-8 mx-auto">Explore os melhores álbuns, conecte-se com seus artistas
-                favoritos e descubra novos lançamentos do cenário musical.</p>
-            <a href="#albuns" class="btn btn-warning rounded-pill px-4 fw-bold mt-2">Explorar Álbuns</a>
-        </section>
-
-        <!-- Cards de Álbuns (6 Cards) -->
-        <section id="albuns" class="mb-5">
-            <h2 class="text-center mb-4">Álbuns em Destaque</h2>
-            <div class="row g-4">
-
-                <!-- Card 1 -->
-                <div class="col-12 col-md-4">
-                    <div class="card bg-black text-light border-secondary h-100 p-2">
-                        <img src="/Semanal4-project/public/images/teto.png" alt="Sobrevivendo no Inferno"
-                            class="card-img-top rounded-3 object-fit-cover" style="height: 200px;">
-                        <div class="card-body text-center">
-                            <h3 class="h5 text-warning">Manha</h3>
-                            <p class="text-secondary small">Autoconfiança e sobrevivência em "Manha" de Teto</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-12 col-md-4">
-                    <div class="card bg-black text-light border-secondary h-100 p-2">
-                        <img src="/Semanal4-project/public/images/teto.png" alt="Previas.zip"
-                            class="card-img-top rounded-3 object-fit-cover" style="height: 200px;">
-                        <div class="card-body text-center">
-                            <h3 class="h5 text-warning">Manha</h3>
-                            <p class="text-secondary small">Autoconfiança e sobrevivência em "Manha" de Teto</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-12 col-md-4">
-                    <div class="card bg-black text-light border-secondary h-100 p-2">
-                        <img src="/Semanal4-project/public/images/teto.png" alt="Máquina do Tempo"
-                            class="card-img-top rounded-3 object-fit-cover" style="height: 200px;">
-                        <div class="card-body text-center">
-                            <h3 class="h5 text-warning">Manha</h3>
-                            <p class="text-secondary small">Autoconfiança e sobrevivência em "Manha" de Teto</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-12 col-md-4">
-                    <div class="card bg-black text-light border-secondary h-100 p-2">
-                        <img src="/Semanal4-project/public/images/teto.png" alt="Nada como um dia após o outro dia"
-                            class="card-img-top rounded-3 object-fit-cover" style="height: 200px;">
-                        <div class="card-body text-center">
-                            <h3 class="h5 text-warning">Manha</h3>
-                            <p class="text-secondary small">Autoconfiança e sobrevivência em "Manha" de Teto</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col-12 col-md-4">
-                    <div class="card bg-black text-light border-secondary h-100 p-2">
-                        <img src="/Semanal4-project/public/images/teto.png" alt="Dos Prédios Deluxe"
-                            class="card-img-top rounded-3 object-fit-cover" style="height: 200px;">
-                        <div class="card-body text-center">
-                            <h3 class="h5 text-warning">Manha</h3>
-                            <p class="text-secondary small">Autoconfiança e sobrevivência em "Manha" de Teto</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col-12 col-md-4">
-                    <div class="card bg-black text-light border-secondary h-100 p-2">
-                        <img src="/Semanal4-project/public/images/teto.png" alt="Castelos & Ruínas"
-                            class="card-img-top rounded-3 object-fit-cover" style="height: 200px;">
-                        <div class="card-body text-center">
-                            <h3 class="h5 text-warning">Manha</h3>
-                            <p class="text-secondary small">Autoconfiança e sobrevivência em "Manha" de Teto</p>
-                        </div>
-                    </div>
-                </div>
-
+        <section class="hero rounded-4 shadow mb-5">
+            <img src="/public/images/racionais.png" alt="Racionais MC's" class="hero-img">
+            <div class="hero-texto">
+                <h1 class="fw-bold display-5 text-white mb-2">A discografia dos Racionais MC's</h1>
+                <p id="resumo" class="fs-5 text-light mb-3">Conheça os álbuns de estúdio do grupo.</p>
+                <a href="#albuns" class="btn btn-warning rounded-pill px-4 fw-bold">Ver álbuns</a>
             </div>
         </section>
 
-        <!-- Formulário de Busca -->
-        <section class="col-md-6 mx-auto mb-5">
-            <form class="bg-black p-4 rounded-4 border border-secondary">
+        <section id="albuns" class="mb-5">
+            <h2 class="text-center mb-4">Álbuns em Destaque</h2>
+
+            <!-- Busca: filtra os cards enquanto você digita -->
+            <form id="form-busca" class="bg-black p-4 rounded-4 border border-secondary col-md-8 mx-auto mb-4">
                 <div class="row g-2 mb-3">
-                    <div class="col-6">
-                        <input type="text" class="form-control" placeholder="Álbum">
+                    <div class="col-12 col-sm-6">
+                        <label for="busca-album" class="visually-hidden">Álbum</label>
+                        <input type="text" id="busca-album" class="form-control" placeholder="Álbum">
                     </div>
-                    <div class="col-6">
-                        <input type="text" class="form-control" placeholder="Artista">
+                    <div class="col-12 col-sm-6">
+                        <label for="busca-artista" class="visually-hidden">Artista</label>
+                        <input type="text" id="busca-artista" class="form-control" placeholder="Artista">
                     </div>
                 </div>
                 <button type="submit" class="btn btn-outline-warning w-100 rounded-pill">Pesquisar</button>
             </form>
+            <p id="contador" class="text-center text-secondary small mb-4" aria-live="polite"></p>
+
+            <!-- Cards gerados pelo app.js -->
+            <div id="lista" class="row g-4"></div>
+        </section>
+
+        <section id="artistas" class="mb-5 text-center">
+            <h2 class="mb-4">Artistas</h2>
+            <p class="text-secondary">Clique em um artista para ver só os álbuns dele.</p>
+            <div id="lista-artistas" class="d-flex flex-wrap justify-content-center gap-2"></div>
+        </section>
+
+        <section id="sobre" class="mb-5 text-center">
+            <h2 class="mb-3">Sobre</h2>
+            <p class="text-secondary col-md-8 mx-auto">O pMusic é um projeto acadêmico de catálogo de álbuns,
+                feito com HTML, CSS, Bootstrap e JavaScript puro. Os dados dos álbuns são fictícios
+                e servem para demonstrar páginas dinâmicas.</p>
         </section>
     </main>
 
-    <!-- Rodapé -->
     <footer class="bg-black border-top border-secondary py-3 text-center text-secondary">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
             <p class="mb-0 small">&copy; 2026 ryanzin. Todos os direitos reservados.</p>
@@ -154,8 +126,8 @@
         </div>
     </footer>
 
-    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/app.js"></script>
 </body>
 
 </html>
