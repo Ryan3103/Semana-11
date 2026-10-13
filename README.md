@@ -7,7 +7,6 @@ Proposta escolhida: Coleções e Itens
 Descrição do projeto:
 É uma aplicação web voltada para a exploração e organização de álbuns musicais. A aplicação apresenta álbuns e seus respectivos artistas, permitindo futuramente consultar suas faixas e buscar diferentes conteúdos musicais.
 
-
 2. Home-page
 
 Abaixo está o resultado da implementação da Home-page utilizando HTML e CSS.
@@ -17,7 +16,5 @@ Versão Desktop
 ![Print da Home-page](public/images/desktop2.png)
 ![Print da Home-page](public/images/desktop3.png)
 
-Versão Mobile
-![Print da Home-page](public/images/mobile1.png)
-![Print da Home-page](public/images/mobile2.png)
-![Print da Home-page](public/images/mobile3.png)
+JSON
+![Print da Home-page](public/images/js.png)
