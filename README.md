@@ -12,9 +12,9 @@ Descrição do projeto:
 Abaixo está o resultado da implementação da Home-page utilizando HTML e CSS.
 
 Versão Desktop
-![Print da Home-page](/public/images/desktop1.png)
-![Print da Home-page](public/images/desktop2.png)
-![Print da Home-page](public/images/desktop3.png)
+![Print da Home-page](public/images/foto1.png)
+![Print da Home-page](public/images/foto2.png)
+![Print da Home-page](public/images/foto3.png)
 
 JSON
 ![Print da Home-page](public/images/js.png)
