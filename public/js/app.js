@@ -2,7 +2,6 @@
 // ==================================================
 // pMusic - Dados dos álbuns
 // ==================================================
-
 const dados = [
 
     {
@@ -385,12 +384,7 @@ function montarDestaques() {
                         ${item.descricao}
                     </p>
 
-                    <a
-                        href="./detalhes.html?id=${encodeURIComponent(item.id)}"
-                        class="btn btn-warning rounded-pill px-4 fw-bold position-relative"
-                    >
-                        Ver álbum
-                    </a>
+                    
 
                 </div>
 
